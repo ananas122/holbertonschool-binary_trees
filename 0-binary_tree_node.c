@@ -19,7 +19,7 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 	/* Initialize left and right children to NULL */
 	new_node->left = NULL;
 	new_node->right = NULL;
-	
+
 	/* Return a pointer to the new node */
 	return (new_node);
 }
