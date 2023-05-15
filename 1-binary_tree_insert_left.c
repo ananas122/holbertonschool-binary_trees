@@ -21,17 +21,17 @@ binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 		return (NULL);
 
 	/*initialiser les champs du nouveau nœud*/
-    	new_node->parent = parent;
-    	new_node->n = value;
-    	new_node->left = NULL;
-    	new_node->right = NULL;
+	new_node->parent = parent;
+	new_node->n = value;
+	new_node->left = NULL;
+	new_node->right = NULL;
 
 	/* Vérifier si le nœud parent a déjà un enfant gauche*/
 	if (parent->left != NULL)
-		{	
-			new_node->left = parent->left;
-			new_node->left->parent = new_node;
-		}
+	{
+		new_node->left = parent->left;
+		new_node->left->parent = new_node;
+	}
 	/*Le nouveau nœud devient l'enfant gauche du nœud parent*/
 	parent->left = new_node;
 	return (new_node);
