@@ -13,7 +13,7 @@ int binary_tree_balance(const binary_tree_t *tree)
 	if (!tree)
 		return (0);
 
-	/*calcule height_left avc la fonct recursive binary_tree_balance sur le tree->left et +1 pour inclure le nœud courant*/
+	/*calcule height_left avc la fonct recursive binary_tree_balance sur le tree->left et +1 pr inclure le nœud courant*/
 	if (tree->left != NULL)
 	{
 		height_left = binary_tree_balance(tree->left) + 1;
