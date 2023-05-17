@@ -7,7 +7,7 @@
  */
 binary_tree_t *binary_tree_uncle(binary_tree_t *node)
 {
-    // Vérifier si le nœud est NULL
+    /*Vérifier si le nœud est NULL*/
     if (node == NULL)
     {
         return NULL;
