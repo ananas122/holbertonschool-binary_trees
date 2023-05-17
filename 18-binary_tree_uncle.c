@@ -27,7 +27,7 @@ binary_tree_t *binary_tree_uncle(binary_tree_t *node)
     }
     else
     {
-        // Return FG du grand parent
+        /* Return FG du grand parent*/
         return node->parent->parent->left;
     }
 }
