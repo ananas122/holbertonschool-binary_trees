@@ -1,7 +1,7 @@
 #include "binary_trees.h"
 
 /**
- *binary_tree_sibling - function sibling brother of a node
+ *binary_tree_sibling - function sibling brother of a node.
  *@node: pointeur to a node.
  *Return: the brother left or right. 
 */
