@@ -6,22 +6,14 @@
  *Return: the brother left or right. 
 */
 
+
 binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 {
-	binary_tree_t *sibling;
-
-	if (!node->parent || !node)
+	if (node == NULL)
+		return (0);
+	if (node->parent == NULL)
 		return (NULL);
-
-
-	sibling = node->parent;
-
-	if (sibling->left == node)
-	{
-		return (sibling->right);
-	}	
-	else
-	{
-		return (sibling->left);
-	}
+	if (node == node->parent->left)
+		return (node->parent->right);
+	return (node->parent->left);
 }
